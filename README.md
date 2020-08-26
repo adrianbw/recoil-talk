@@ -1,3 +1,10 @@
+## Background
+
+This repo was created as part of a talk I gave at CUJS on 20200826. To view the examples, just run `yarn start`. To learn more about Recoil, visit [https://recoiljs.org/](https://recoiljs.org/).
+
+## About Me
+I'm an engineering manager at <a href="https://granular.ag">Granular</a>. In my free time, I do nerd shit like play Dungeons and Dragons and run a [StarCraft 2 mod team](https://antioch.games). You can [find me on Twitter](https://twitter.com/lucidiguana).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
