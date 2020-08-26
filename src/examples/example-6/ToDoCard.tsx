@@ -19,16 +19,20 @@ export const ToDoCardRaw: React.FunctionComponent<ToDoCardProps> = (props) => {
     <>
       {toDo && (
         <Card className="m-auto">
-          <CardImg top width="100%" src="https://placekitten.com/400/400" />
+          <CardImg
+            top
+            width="100%"
+            src={`https://placekitten.com/40${toDo.id}/40${toDo.id}`}
+          />
           <CardBody>
             <CardTitle>
-              <h1>To Do #{toDo.id}</h1>
+              <h3>To Do #{toDo.id}</h3>
             </CardTitle>
           </CardBody>
           <CardText>
-            <h2>Description</h2>
+            <span className="h4">Description</span>
             {toDo.title}
-            <h2>Completed?</h2>
+            <span className="h4">Completed?</span>
             {toDo.completed ? "Complete" : "Incomplete"}
           </CardText>
         </Card>

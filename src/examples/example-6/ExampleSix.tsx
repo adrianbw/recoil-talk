@@ -8,9 +8,12 @@ const LoadingPlaceholder: React.FunctionComponent = () => (
 );
 export const ExampleSix: React.FunctionComponent = () => {
   return (
-    <React.Suspense fallback={<LoadingPlaceholder />}>
-      <ToDoSelector />
-      <ToDoCard />
-    </React.Suspense>
+    <>
+      <h2>Parameterizing Fetch</h2>
+      <React.Suspense fallback={<LoadingPlaceholder />}>
+        <ToDoSelector />
+        <ToDoCard />
+      </React.Suspense>
+    </>
   );
 };

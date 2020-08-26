@@ -16,19 +16,22 @@ export const ExampleOne: React.FunctionComponent = () => {
     divOneSelectedState
   );
   return (
-    <Card className="m-auto">
-      <CardImg top src="https://placekitten.com/401/401" />
-      <CardBody>
-        <CardTitle>Example One</CardTitle>
-      </CardBody>
-      <CardText
-        className={classnames("m-2", { "text-primary": divOneSelected })}
-      >
-        I'm the text you care about!
-      </CardText>
-      <Button onClick={() => setDivOneSelected(!divOneSelected)}>
-        Toggle Div
-      </Button>
-    </Card>
+    <>
+      <h2>Basic Example</h2>
+      <Card className="m-auto">
+        <CardImg top src="https://placekitten.com/401/401" />
+        <CardBody>
+          <CardTitle>Example One</CardTitle>
+        </CardBody>
+        <CardText
+          className={classnames("m-2", { "text-primary": divOneSelected })}
+        >
+          I'm the text you care about!
+        </CardText>
+        <Button onClick={() => setDivOneSelected(!divOneSelected)}>
+          Toggle Div
+        </Button>
+      </Card>
+    </>
   );
 };

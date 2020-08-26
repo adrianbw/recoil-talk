@@ -9,9 +9,12 @@ const LoadingPlaceholder: React.FunctionComponent = () => (
 export const ExampleFour: React.FunctionComponent = () => {
   const [fetchList, setFetchList] = React.useState(false);
   return (
-    <React.Suspense fallback={<LoadingPlaceholder />}>
-      <Button onClick={() => setFetchList(true)}>Fetch List</Button>
-      {fetchList && <FetchList />}
-    </React.Suspense>
+    <>
+      <h2>Fetching Data with Suspense</h2>
+      <React.Suspense fallback={<LoadingPlaceholder />}>
+        <Button onClick={() => setFetchList(true)}>Fetch List</Button>
+        {fetchList && <FetchList />}
+      </React.Suspense>
+    </>
   );
 };

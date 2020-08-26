@@ -17,7 +17,7 @@ export const parameterizedFetchSelectorState = selectorFamily<
   ToDo | null,
   string | null
 >({
-  key: "fetchSelectorState",
+  key: "parameterizedFetchSelectorState",
   get: (item: string | null) => async () => {
     if (item && !isNaN(Number(item))) {
       const response = await axios.get(

@@ -4,10 +4,10 @@ import { filteredListState } from "./recoil";
 import { ListGroup, ListGroupItem } from "reactstrap";
 
 export const ExampleList: React.FunctionComponent = () => {
-  const list = useRecoilValue(filteredListState);
+  const filteredList = useRecoilValue(filteredListState);
   return (
     <ListGroup>
-      {list.map((item) => (
+      {filteredList.map((item) => (
         <ListGroupItem key={item}>{item}</ListGroupItem>
       ))}
     </ListGroup>
